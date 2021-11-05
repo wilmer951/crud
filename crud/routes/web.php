@@ -20,3 +20,4 @@ Route::get('home/productos',[enlaces::class,'productos'])->name('productos');
 Route::get('home/productos/mostrar',[crud::class,'mostrar'])->name('mostrar');
 Route::post('home/productos/crear',[crud::class,'crearte'])->name('productos.crear');
 
+
