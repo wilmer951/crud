@@ -31,4 +31,44 @@ class crud extends Controller
 
 
 
+    public function editar($id){
+
+        
+        $producto =producto::find($id);
+        
+        return view('editar',compact('producto'));
+
+
+        
+    }
+
+
+
+    public function update(request $request,producto $productos){
+
+        $productos->name=$request->name;
+        $productos->tipo=$request->tipo;
+        $productos->descripcion=$request->descripcion;
+        $productos->save();
+
+
+
+
+    }
+
+
+    public function delete(producto $productos){
+
+        $productos->delete();
+        
+
+
+
+
+
+
+    }
+
+
+
 }

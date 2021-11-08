@@ -8,6 +8,7 @@
 <form action="{{route('productos.crear')}}" method="post" >
 
 @csrf
+
 <div>
     <input type="text" name="name" placeholder="nombre" class="form-control">
 </div>
